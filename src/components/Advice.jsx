@@ -1,12 +1,8 @@
 import { Modal, Carousel, Button } from "react-bootstrap";
 import { useEffect, useState } from "react";
-import { RiHomeSmileLine, RiVirusLine } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 import { ChatState } from "./../context/chatContext";
-import {
-  AiOutlineCheckCircle,
-  AiOutlineSafetyCertificate,
-} from "react-icons/ai";
+import g from "../assets/003-stay-at-home.png";
 
 const Advice = ({ result }) => {
   const [showModal, setShowModal] = useState(false);
@@ -107,8 +103,10 @@ const Advice = ({ result }) => {
             <Carousel.Item>
               <div className="carousel-item-content">
                 {result === "covid" ? (
-                  // <RiHomeSmileLine color="#008fe2" size={40} />
-                  <p>Stay home and self-isolate</p>
+                  <div className="d-flex" width={32}>
+                    {/* <img src={g} /> */}
+                    <p>Stay home and self-isolate</p>
+                  </div>
                 ) : result === "normal" ? (
                   <p>Get vaccinated</p>
                 ) : result === "melanoma" ? (
