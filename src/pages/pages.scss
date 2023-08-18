@@ -1,0 +1,195 @@
+$main-color: #008fe2;
+$text-color: #000;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.check {
+  background-color: #f4f4f4;
+  .col {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 1px 20px 0 rgb(46 61 73 / 20%);
+
+    h3 {
+      color: $main-color;
+    }
+
+    button {
+      outline: none;
+      border: none;
+      background-color: $main-color;
+      border-radius: 5px;
+      padding: 7px;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  .icon {
+    color: $main-color;
+    height: 50px;
+    width: 100px;
+  }
+}
+
+.uploadIcon {
+  width: 200px;
+  height: 200px;
+  color: $main-color;
+}
+
+.upload {
+  height: 100vh;
+
+  .photo {
+    img {
+      width: 300px;
+    }
+  }
+
+  button {
+    outline: none;
+    border: none;
+    background-color: $main-color;
+    color: #fff;
+    border-radius: 5px;
+    padding: 7px;
+    margin-top: 40px;
+  }
+}
+
+.login {
+  background-color: #f4f4f4;
+  height: 100vh;
+}
+
+.formContainer {
+  background-color: $main-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .formWrapper {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 60px;
+    border-radius: 10px;
+    box-shadow: 0 1px 20px 0 rgb(46 61 73 / 20%);
+
+    @media (max-width: 767px) {
+      width: 360px;
+    }
+
+    .logo {
+      color: $main-color;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .title {
+      color: $main-color;
+      font-size: 12px;
+    }
+
+    form {
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      input:not(input[type="radio"]) {
+        padding: 15px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $main-color;
+        width: 250px;
+        &::placeholder {
+          color: #777;
+        }
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: $main-color;
+        gap: 5px;
+      }
+
+      select {
+        border: none;
+        width: 58%;
+        outline: none;
+        cursor: pointer;
+        border: 1px solid $main-color;
+        padding: 5px;
+        border-radius: 10px;
+        color: $main-color;
+      }
+
+      button {
+        border: none;
+        padding: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #fff;
+        background-color: $main-color;
+        border-radius: 10px;
+      }
+    }
+    p {
+      font-size: 12px;
+      color: $main-color;
+    }
+  }
+}
+
+.head {
+  background-color: $main-color;
+  padding: 25px 0;
+  color: #fff;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text h1 {
+    font-weight: normal;
+    letter-spacing: -2px;
+  }
+}
+
+.doctors {
+  background-color: #f4f4f4;
+  .box {
+    background-color: #fff;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 20px;
+    box-shadow: 0 1px 20px 0 rgb(46 61 73 / 20%);
+
+    .text {
+      .name {
+        margin-bottom: 0;
+      }
+      .specialty {
+        color: #777;
+      }
+    }
+
+    img {
+      border-radius: 50%;
+      border: 2px solid $main-color;
+    }
+  }
+}
